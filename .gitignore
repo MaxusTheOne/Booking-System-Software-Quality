@@ -33,6 +33,13 @@ build/
 .vscode/
 .env
 
+# Node / Playwright local files
+node_modules/
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+playwright/.auth/
 # Playwright
 node_modules/
 /test-results/

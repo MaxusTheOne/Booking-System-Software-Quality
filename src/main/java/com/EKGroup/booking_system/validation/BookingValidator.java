@@ -1,6 +1,5 @@
 package com.EKGroup.booking_system.validation;
 
-import com.EKGroup.booking_system.config.TimeSlotConfig;
 import com.EKGroup.booking_system.dto.CreateBookingRequest;
 import com.EKGroup.booking_system.exception.ValidationException;
 import org.springframework.stereotype.Component;
@@ -14,9 +13,9 @@ public class BookingValidator {
     private final List<java.time.LocalTime> allowedTimeSlots;
     private final Clock clock;
 
-    public BookingValidator(List<java.time.LocalTime> allowedTimeSlots) {
+    public BookingValidator(List<java.time.LocalTime> allowedTimeSlots, Clock clock) {
         this.allowedTimeSlots = allowedTimeSlots;
-        this.clock = Clock.system(TimeSlotConfig.BOOKING_ZONE);
+        this.clock = clock;
     }
 
     public void validateRequest(CreateBookingRequest request) {

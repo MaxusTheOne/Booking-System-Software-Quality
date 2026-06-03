@@ -18,4 +18,8 @@ For checking postrgres-db:
 6. To exit: \q
 
 
+<<<<<<< Updated upstream
 <!-- Change for commit sake -->
+=======
+<!-- AAAAAAAAAAAAAAAAAA A TEST -->
+>>>>>>> Stashed changes

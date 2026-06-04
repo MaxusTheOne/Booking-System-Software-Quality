@@ -96,7 +96,7 @@ public class BookingService {
         booking.setCreatedAt(LocalDateTime.now(clock));
 
         Booking saved = bookingRepository.save(booking);
-        return toResponse(saved);
+        return;
     }
 
     @Transactional(readOnly = true)
